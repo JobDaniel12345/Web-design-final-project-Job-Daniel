@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleB.css">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+</head>
+
+<body>
+
+  
+   
+  
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1>Buildings <img src="img/logo.svg" width="50px" alt="logo"></h1></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="#navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown">
+                    Projects
+                    </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=s69BlPj7P_U">Project 1</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=reK2EKoqbfM">Project 2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=_PapsNhkpJs">Most recent project</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <!-- button for contact-->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Contact
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#myForm">
+                        Start Project
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="exampleModalLabel">Contact us</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Telephone: +31 6 27394746 <br>
+          Email: Bobthebuilder@gmail.com<br>
+          Facebook: Bob the Builder
+         <br>
+          <br><br>
+          Contact me when you have questions.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myForm" tabindex="-1" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="exampleModalLabel">Fill the form</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form novalidate class="container-fluid needs-validation">
+                <div>
+                    <label class="form-label">Name <input required type="text" class="form-control" name="name" placeholder="Bob the Builder" >
+                    
+                    <div class="valid-feedback">
+                        Succesful
+                    </div>
+                    
+                    <div class="invalid-feedback">
+                        Sorry, invalid. Try again.
+                    </div> 
+                    </label>
+                </div>
+                
+                <div>
+                    <label class="form-label">Email <input required type="email" class="form-control" name="email" placeholder="bobthebuilder@outlook.com" ></label>
+                        <div class="valid-feedback">
+                        Succesful
+                        </div>
+                        <div class="invalid-feedback">
+                        Sorry, invalid. Try again.
+                        </div> 
+                </div>
+                Where do you want to build your house?
+                <div class="form-check">
+                <label form-check-label>
+                City-centre<input  class="form-check-input" name="question" value="City-centre" type="radio"></label>
+                </div>
+                
+                <div class="form-check">
+                <label form-check-label >
+                Quiet neigbourhood<input  class="form-check-input" name="question" value="Quiet neigbourhood" type="radio"></label>
+                </div>
+                
+                With or without pets?
+                
+                <div class="form-check">
+                
+                <label class="form-check-label">With pets
+                <input class="form-check-input" name="question2" type="radio" value="With pets"></label>
+                </div>
+                
+                <div class="form-check">
+                <label class="form-check-label">Without pets
+                    <input class="form-check-input" name="question2" type="radio" value="Without pets"></label>
+                
+                </div>
+                
+                What is your budget?
+                
+                <select class="form-select form-select-lg">
+                
+                <option selected> 100.000 - 350.000 U$D </option>
+                <option>350.000 - 500.000 U$D</option>
+                <option >500.000 - 1.000.000 U$D</option>
+                
+                </select>
+                
+                <button class="mt-3 btn btn-success"> Show availability</button>
+                
+            </form>
+                
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <a href="img/chris-ainsworth-83SoRbcgfXk-unsplash.jpg" data-lightbox="roadtrip" data-title="Foto">
+                <img class="img-fluid" src="img/chris-ainsworth-83SoRbcgfXk-unsplash.jpg" alt="Picture">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-5">
+    <h1>Project</h1>
+    <p>Let me show my   project </p>
+    <p>On this page, you can find any information regarding my building experience. </p>
+</div>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md-12 col-lg-5 col-xl-4 mt-3 mb-3">
+            <a href="img/House1.jpeg" data-lightbox="slide" data-title="House1">
+            <img class="img-fluid" src="img/House1.jpeg" alt="pic1"></a>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 mt-3 mb-3">
+            <a href="img/house2.jpeg" data-lightbox="slide" data-title="house2">
+            <img class="img-fluid" src="img/house2.jpeg" alt="pic2"></a>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 mt-3 mb-3">
+            <a href="img/House3.jpeg" data-lightbox="slide" data-title="House3">
+            <img class="img-fluid" src="img/House3.jpeg" alt="pic3"></a>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 mt-3 mb-3">
+            <a href="img/House4.jpeg" data-lightbox="slide" data-title="House4">
+                <img class="img-fluid" src="img/House4.jpeg" alt="pic4"></a>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 mt-3 mb-3">
+            <a href="img/House10.jpeg" data-lightbox="slide" data-title="House10">
+                <img class="img-fluid" src="img/House10.jpeg" alt="pic5"></a>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-4 mt-3 mb-3">
+            <a href="img/House8.jpeg" data-lightbox="slide" data-title="House8">
+                <img class="img-fluid" src="img/House8.jpeg" alt="pic6"></a>
+        </div>
+    </div>
+</div> 
+<div class = "wheelbarrel">
+  <img src="img/Wheelbarrow.png"
+    width="100"
+    height="100">
+</div>
+
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-between">
+        <div class="col-md-12 col-lg-12 col-xl-6 order-2 order-xl-1">
+            <h1> Let's show you my favourite build</h1>
+            <p> This is a video of the first skyscraper we have build. The build took 2 years and 8 months. <br> You can consult anytime</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Contact
+            </button>
+        </div>
+        <div class="col-md-12 col-lg-12 col-xl-6 order-1 order-xl-2 ">
+
+          <video class="img-fluid" id="video" loop autoplay muted controls src="video/Pexels Videos 2818546.mp4"></video>
+        </div>
+    </div>
+</div>
+
+<footer ></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+
+
+
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+    })
+
+</script>
+
+
+
+
+</body>
+</html>
